@@ -46,3 +46,17 @@ The alert demonstrates successful network-based threat detection. Suricata ident
 - Network traffic monitoring
 - Alert analysis
 - SOC investigation workflow
+
+  ## Evidence
+
+### Suricata Engine Running
+
+The screenshot below shows Suricata successfully configured and running on the `eth0` network interface.
+
+![Suricata Engine Running](Suricata-engine-running.jpeg)
+
+### Suricata Alert Detection
+
+The screenshot below shows Suricata detecting the generated test traffic and recording the `GPL ATTACK_RESPONSE id check returned root` alert.
+
+![Suricata Alert Detection](Suricata-alert-detection1.jpeg)
