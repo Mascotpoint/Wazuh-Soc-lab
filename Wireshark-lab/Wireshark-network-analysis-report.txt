@@ -1,0 +1,39 @@
+WIRESHARK NETWORK TRAFFIC ANALYSIS LAB
+
+Objective:
+Capture and analyze live network traffic using Wireshark and practice basic packet investigation techniques used by SOC analysts.
+
+Environment:
+- Kali Linux virtual machine
+- Oracle VirtualBox
+- Wireshark
+- Network Interface: eth0
+
+Analysis Performed:
+1. Started a live packet capture on the eth0 interface.
+2. Applied the HTTP display filter to isolate HTTP traffic.
+3. Identified an HTTP GET request from:
+   Source IP: 192.168.1.194
+   Destination IP: 91.189.91.96
+4. Inspected the HTTP request and identified:
+   Method: GET
+   Host: connectivity-check.ubuntu.com
+   Protocol: HTTP/1.1
+5. Examined the server response:
+   HTTP/1.1 204 No Content
+   x-networkmanager-status: online
+6. Used "Follow TCP Stream" to reconstruct and inspect the communication between the client and server.
+
+Findings:
+The captured traffic was an HTTP connectivity check. The client contacted connectivity-check.ubuntu.com, and the server returned HTTP status code 204 (No Content), indicating that the connectivity check completed successfully.
+
+SOC Skills Practiced:
+- Packet capture
+- Protocol filtering
+- Source and destination IP analysis
+- HTTP request/response analysis
+- TCP stream reconstruction
+- Network traffic investigation
+
+Conclusion:
+This lab demonstrated how Wireshark can be used to inspect network communications and investigate individual packets and TCP sessions. These techniques are useful for SOC analysts when investigating suspicious network activity and validating network connections.
