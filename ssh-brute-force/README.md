@@ -72,6 +72,17 @@ In a production environment, recommended response actions would include:
 
 ## Outcome
 
+## Evidence
+
+### Wazuh SSH Brute-Force Alert
+![Wazuh SSH Brute-Force Alert](01-wazuh-brute-force-alert.png)
+
+### Failed SSH Login Evidence
+![SSH Failed Login Evidence](02-ssh-failed-login-evidence.png)
+
+### Brute-Force Events Overview
+![Wazuh Brute-Force Events Overview](03-wazuh-brute-force-events-overview.png)
+
 The lab successfully demonstrated:
 
 - Linux authentication log monitoring
