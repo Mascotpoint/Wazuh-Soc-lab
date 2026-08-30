@@ -49,3 +49,17 @@ The alert was generated at **Level 7** under custom **Rule ID 100100**.
 
 ## Conclusion
 This lab demonstrates an end-to-end detection workflow from Windows Sysmon telemetry to a custom Wazuh security alert.
+
+
+## SOC-CLIENT Detection Evidence
+
+The detection was successfully validated on the SOC-CLIENT Windows endpoint.
+
+### Wazuh Alert
+![SOC-CLIENT Wazuh Alert](screenshots/03-soc-client-wazuh-alert.png)
+
+### Process Details
+![SOC-CLIENT Process Details](screenshots/04-soc-client-process-details.png)
+
+### Sysmon Event ID 1
+![SOC-CLIENT Sysmon Event ID 1](screenshots/05-soc-client-sysmon-event-id-1.png)
